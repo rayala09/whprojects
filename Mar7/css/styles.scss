@@ -1,0 +1,112 @@
+html {
+    font-family: sans-serif;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav#horizontal {
+    background-color: hsl(0, 0%, 13%);
+    padding: 10px;
+    color: white;
+}
+//styles nav to be horizontal
+nav#horizontal ul {
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+        font-weight: 100;
+        padding: 5px;
+        
+    } 
+    //styles nav bar links when hovered and active
+    a:hover, a.Active {
+      color: hsl(200,70%,73%);
+      background-color: hsl(0, 0%, 21%);
+      
+    
+    }
+}
+
+nav#dropdown {
+    background-color: hsl(0, 0%, 85%);
+    padding: 10px;
+    color: black;
+}
+// Displaying Drop down navigation
+nav#dropdown ul {
+    // background-color: hsla(15,50%,50%,.5);
+    //& used to go back to the nav#dropdown ul
+    //li:nthchild targets only the first link   
+    & li {  
+        position: relative;
+        display: inline-block;
+    }
+    & li:nth-child(1):hover {
+        ul {
+            display: block;
+        }
+
+    }
+    //hides the unorder list
+    ul {
+        display: none;
+        position: absolute;
+        background-color: hsl(0, 0%, 55%);
+        padding: 10px;
+        li {
+            white-space: nowrap;
+            display: block;
+        }
+        //pseudo class for displaying border-bottom except the last child
+        li:not(:last-child) {
+    
+            border-bottom: 1px solid hsl(0, 0%, 45%);
+        }
+        a {
+            display: block;
+            padding-right: 20px;
+            transition: all 250ms; //transitions the syles added to dropdown menu links
+            box-sizing: border-box;
+        }
+        //Stlyes dropdown menu links
+        a:hover {
+            color: white;
+            border-left: 3px solid hsl(340, 50%, 50%);
+            text-indent: 3px;
+        }
+    }
+    a {
+       display: inline-block;
+       padding: 5px;
+       color:inherit;
+       text-decoration: none;
+    }
+    a:hover {
+        background-color: hsl(0, 0%, 75%);
+    }
+
+}
+
+.stuff {
+    width: calc(100%-40px);
+    background-color: red;
+    padding: 40px;
+    border: 10px dashed blue;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+
+// body {
+//     margin: 0;
+// }
+

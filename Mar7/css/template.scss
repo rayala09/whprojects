@@ -1,0 +1,92 @@
+//imports font to mulitiple html pages
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+html {
+   
+    font-family: 'Roboto', sans-serif;
+}
+//globally styling body to have 0 margin
+body {
+    margin: 0;
+
+}
+//styles list hotizontal/styles ul globally
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px
+}
+.signup {
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(208, 55%, 60%);    
+    border-radius: 4px;
+    
+
+}
+header {
+    background-image: url('http://unsplash.it/1000/500?image=560');
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+
+}
+// styling nav bar
+nav {
+    background-color: white;
+    margin-bottom: 100px;
+    color: black;
+    padding: 10px;
+   ul {
+        display: flex;
+    }
+ //first child on the left and rest to the right on nav bar
+   li:first-child {
+            margin-right: auto;
+            text-transform: uppercase;
+    }
+        //styling nav links
+    a {
+        padding: 5px 15px;       
+    }
+}
+
+div {
+    text-align: center;   
+    h2 {
+        font-size: 10;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 0%, 0.5);
+    }
+    p {
+        color: hsla(0, 0%, 0%, 0.4);
+    }
+
+    
+
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 64px;
+    li {
+        
+        padding: 48px 32px;
+        border: 1px solid hsla(0, 0%, 0%, 0.5);
+        border-radius: 4px;
+    }
+    
+}
