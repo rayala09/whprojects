@@ -1,0 +1,74 @@
+$black: hsl(0, 0%, 95%);
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+
+
+
+#cover {
+    background-image: url(https://picsum.photos/1000/250?image=1063);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    
+}
+#home {
+    background-color: gray;
+}
+#about {
+    background-color: red;
+}
+#gallery {
+    background-color: peachpuff;
+}
+#contact {
+    background-color: goldenrod;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    // padding: 25px;
+
+}
+nav#horizontal ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: hsla(0, 56%, 2%, .6);
+    margin: 0;
+    padding: 15px;
+}
+a {
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    transition: all 300ms;
+    font-size: 100%;
+    
+
+}
+a:hover {
+    background-color: hsla(0, 56%, 2%, .7);
+    border-radius: 2px;
+}
+a.active {
+    background-color: hsla(0, 56%, 2%, .7);
+    border-radius: 10px;
+    
+}
+
+i {
+    position: absolute;
+    font-size: 100px;
+
+}
+img:hover {
+    size: 150%;
+}
