@@ -71,6 +71,15 @@ header {
   text-justify: left;
 }
 
+#home a {
+  text-decoration: none;
+  color: blue;
+}
+
+#home a.about:hover {
+  color: yellow;
+}
+
 #about {
   background-color: grey;
 }
@@ -138,8 +147,21 @@ header {
   width: 250px;
 }
 
+#gallery i {
+  padding-left: 10px;
+  font-size: 30;
+}
+
 #contact {
   background-color: green;
+}
+
+#contact div.contact {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact footer ul {
@@ -187,7 +209,7 @@ header {
 #plane {
   display: inline-block;
   animation-name: fly;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
