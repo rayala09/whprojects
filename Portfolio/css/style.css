@@ -85,8 +85,39 @@ header {
   width: 200px;
 }
 
+#about div.bio {
+  margin-top: 100px;
+}
+
+#about div.bio h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#about div.bio p {
+  padding: 20px;
+  padding-right: 60px;
+  text-align: left;
+}
+
+#about div.bio a {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: blue;
+}
+
+#about div.bio a:hover {
+  color: red;
+}
+
 #gallery {
   background-color: blue;
+}
+
+#gallery h2 {
+  display: flex;
+  justify-content: center;
 }
 
 #gallery ul {
@@ -136,5 +167,28 @@ header {
 
 #contact a.instagram {
   color: white;
+}
+
+@keyframes fly {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1) translate(500px);
+  }
+  50% {
+    transform: scale(1) translate(1000px);
+  }
+  75% {
+    transform: scale(1) translate(1500px);
+  }
+}
+
+#plane {
+  display: inline-block;
+  animation-name: fly;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 /*# sourceMappingURL=style.css.map */
