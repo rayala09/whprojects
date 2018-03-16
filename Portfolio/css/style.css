@@ -1,6 +1,36 @@
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Russo+One");
+figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  bottom: -1px;
+}
+
+figcaption {
+  position: absolute;
+  text-align: center;
+  background: rgba(8, 2, 2, 0.8);
+  color: white;
+  opacity: 0;
+  bottom: 13.5px;
+  left: 7px;
+  width: 250px;
+  transition: all 200ms ease;
+}
+
+figure:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px red;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +52,7 @@ nav#horizontal ul {
   background-color: rgba(8, 2, 2, 0.7);
   margin: 0;
   padding: 15px;
+  width: 100%;
 }
 
 nav#horizontal ul a {
@@ -49,12 +80,17 @@ nav#horizontal ul .navright li {
 }
 
 header {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-image: url(https://unsplash.it/550);
   background-size: cover;
   background-position: center;
-  padding: 100px;
   text-align: center;
+  height: 400px;
+}
+
+header h2 {
+  margin-top: 150px;
 }
 
 #home {
@@ -91,7 +127,8 @@ header {
   border: 2px solid black;
   border-radius: 4px;
   padding: 3px;
-  width: 200px;
+  width: 250px;
+  margin-right: 20px;
 }
 
 #about div.bio {
@@ -138,18 +175,23 @@ header {
 #gallery ul li {
   margin-left: -1px;
   padding: 5px;
+  bottom: 1;
 }
 
 #gallery img {
-  border: 3px solid black;
+  border: 2px solid #787878;
   border-radius: 5px;
   padding: 5px;
   width: 250px;
 }
 
+#gallery img:hover {
+  box-shadow: 0 0 3px 2px red;
+}
+
 #gallery i {
   padding-left: 10px;
-  font-size: 30;
+  font-size: 25px;
 }
 
 #contact {
@@ -164,6 +206,11 @@ header {
   align-items: center;
 }
 
+#contact i {
+  font-size: 40px;
+  padding: 20px;
+}
+
 #contact footer ul {
   display: flex;
   justify-content: center;
@@ -174,7 +221,7 @@ header {
   padding: 10px;
 }
 
-#contact i {
+#contact footer ul i {
   font-size: 50px;
   padding: 20px;
 }
@@ -204,13 +251,13 @@ header {
   75% {
     transform: scale(1) translate(1500px);
   }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #plane {
   display: inline-block;
-  animation-name: fly;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation: fly 3s 1s ease;
 }
 /*# sourceMappingURL=style.css.map */

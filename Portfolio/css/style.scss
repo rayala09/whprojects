@@ -21,26 +21,36 @@
 //         width: 250px;
         
 //     }
-//     figure {
-//         margin: 0;
-//         padding: 0;
-//         position: relative;
-//         overflow: hidden;
-//     }
-//     figcaption  {
-//         position: absolute;
-//         border-radius: 5px;
-//         background: hsla(0, 56%, 2%, .4);
-//         color: white;
-//         margin: 10px 15.5px;
-//         padding: 10px 52px;
-//         opacity: 0;
-//         bottom: 0;
-//         transition: all 200ms ease;
+    figure {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        bottom: -1px;
+    }
+    figcaption  {
+        position: absolute;
+        text-align: center;
+        // border-radius: 5px;
+        background: hsla(0, 56%, 2%, .8);
+        color: white;
+        // margin: 10px 15.5px;
+        // padding: 10px 52;
+        opacity: 0;
+        bottom: 13.5px;
+        left: 7px;
+        width: 250px;
+        transition: all 200ms ease;
         
-//     }
-//     figure:hover figcaption {
-//         opacity: 1;
+    }
+    figure:hover {
+        border-radius: 5px;
+        box-shadow: 0 0 3px 2px red;
+    }
+    figure:hover figcaption {
+        opacity: 1;
+    }
 
         
 
@@ -118,6 +128,7 @@
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
+// Global styles
 body {
     margin: 0;
     padding: 0;
@@ -136,6 +147,7 @@ nav#horizontal ul {
     background-color: hsla(0, 56%, 2%, .7);
     margin: 0;
     padding: 15px; 
+    width: 100%;
     a {
         color: white;
         text-decoration: none;
@@ -158,15 +170,20 @@ nav#horizontal ul {
     }        
 }
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-image: url(https://unsplash.it/550);
     background-size: cover;
     background-position: center;
-    padding: 100px;
     text-align: center;
+    height: 400px;
+    h2 {
+        margin-top: 150px;
+    }
     
 
 }
+//Styles to Pages individually
 #home {
     background-color: red;
     div {
@@ -184,6 +201,11 @@ header {
     a.about:hover {
         color: yellow;
     }
+    // header {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
 }
 #about {
     background-color: grey;
@@ -194,7 +216,8 @@ header {
         border: 2px solid black;
         border-radius: 4px;
         padding: 3px;
-        width: 200px;
+        width: 250px;
+        margin-right: 20px;
     }
     div.bio {
         margin-top: 100px;
@@ -232,17 +255,22 @@ header {
         li {
             margin-left: -1px;
             padding: 5px;
+            bottom: 1;
         }
     }
     img {
-        border: 3px solid black;
+        border: 2px solid hsl(0, 0%, 47%);
         border-radius: 5px;
         padding: 5px;
         width: 250px;        
     }
+    img:hover {
+        box-shadow: 0 0 3px 2px red;
+    }
     i {
         padding-left: 10px;
-        font-size: 30
+        font-size: 25px;
+        
     }
 }  
 #contact {
@@ -254,6 +282,10 @@ header {
         justify-content: center;
         align-items: center;
     }
+    i {
+        font-size: 40px;
+        padding: 20px;
+    }
     footer ul {
         li {
             padding: 10px;
@@ -261,10 +293,10 @@ header {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-    }
-    i {
-        font-size: 50px;
-        padding: 20px;
+        i {
+            font-size: 50px;
+            padding: 20px;
+        }
     }
     a.twitter{
         color: #15aabf;
@@ -278,7 +310,7 @@ header {
 }
 
 
-
+//animations
 //plane icon
 @keyframes fly {
     0% {
@@ -293,12 +325,15 @@ header {
     75% {
         transform: scale(1) translate(1500px);
     }
+    100% {
+        transform: scale(1);
+    }
 }
 #plane {
     display: inline-block;
-
-    animation-name: fly;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    animation: fly 3s 1s ease ;
+    // animation-name: fly;
+    // animation-duration: 7s;
+    // animation-fill-mode: forwards;
+    // animation-timing-function: ease-in;
 }
