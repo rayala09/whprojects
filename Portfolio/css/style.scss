@@ -249,6 +249,7 @@ header {
     h2 {
         display: flex;
         justify-content: center;
+        font-size: 30px;
     }
     ul {
         display: flex;
@@ -264,10 +265,12 @@ header {
         border: 2px solid hsl(0, 0%, 47%);
         border-radius: 5px;
         padding: 5px;
-        width: 250px;        
+        width: 250px;    
+           
     }
     img:hover {
         box-shadow: 0 0 3px 2px red;
+        
     }
     i {
         padding-left: 10px;
@@ -276,7 +279,7 @@ header {
     }
 }  
 #contact {
-    background-color: green;
+    background-color: lightsalmon;
     div.contact {
         margin-top: 150px; 
         display: flex;
