@@ -1,0 +1,24 @@
+/* 
+In your Html file:
+   -Create 3 buttons.
+   -Each button must have a unique id.
+   -Create:
+      -navigation w/ 3 links (ADD an ID to the nav tags)
+      -h1 (add an ID)
+      -p w/lorem ipsum text (add an ID)
+      - two a tags  (use the text inside the paragraph & add an ID two both)
+   -style elements to your liking
+*/
+
+/* 
+  In your JS file:
+    - Create 10 variables targeting each of the ID's elements
+    - Create 5 "click" eventlisteners. 1 for each of the buttons & 1 for each of the a tags
+    -write 5 functions:
+       -1 that automatically runs on page load; Change body background color
+       -1 that toggles the navigation from horizontal orientation to vertical
+       -1 that prompts the user for their first name and add that name to the text of the h1
+       -1 that doubles the users name font-size and changes the color
+       -1 that changes the text color of Either a tag 
+
+*/

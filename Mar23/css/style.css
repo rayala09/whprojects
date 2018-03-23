@@ -1,0 +1,72 @@
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+body {
+  margin: 0;
+  background-color: yellow;
+  font-family: sans-serif;
+}
+
+nav {
+  margin: 0;
+  background-color: rgba(48, 48, 48, 0.9);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: springgreen;
+}
+
+#h1 {
+  display: flex;
+  justify-content: center;
+}
+
+#p1 {
+  font-size: larger;
+}
+
+#p1 a {
+  text-decoration: none;
+  color: green;
+}
+
+nav.sideNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(48, 48, 48, 0.6);
+  width: 250px;
+  height: 100vh;
+}
+
+nav.sideNav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.sideNav ul li {
+  margin: 20px;
+}
+
+div.water {
+  display: flex;
+  justify-content: center;
+}
+
+h1.style {
+  font-size: 64px;
+  color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
