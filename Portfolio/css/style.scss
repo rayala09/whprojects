@@ -251,7 +251,12 @@ header {
     h2 {
         display: flex;
         justify-content: center;
-        font-size: 30px;
+        font-size: 28px;
+    }
+    h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
     }
     ul {
         display: flex;
@@ -275,6 +280,7 @@ header {
         
     }
     i {
+        margin-top: 6px;
         padding-left: 10px;
         font-size: 25px;
         
@@ -307,6 +313,11 @@ header {
     }
     a.twitter{
         color: #15aabf;
+        i {
+            background-color: white;
+            background-clip: content-box;
+            
+        }
     }
     a.facebook {
         color: rgb(31, 82, 192);
