@@ -162,7 +162,7 @@ getAge();
 
 */
 
-
+//INITIAL STORY
 function entryStory(){
     var story = prompt("Hello and welcome to Club One Casino. Would you like to go to the: Restaurant, Bar or Gambling Area?");
 
@@ -173,22 +173,59 @@ function entryStory(){
     else if(story == "Bar" || story == "bar"){
         path2(story);
     }
-    else{
+    else if(story=="Gambling Area" || story=="gambling area"){
         path3(story);
+    }
+    else {
+        alert('incorrect input, try again')
+        entryStory();
     }
 
 
 }
 
+//PATH OPTION 1
 function path1(){
-   var story1 = prompt("Looks like you are quite hungry, Can I get you something to drink in the meantime? If so what would you like?");    
+   var story1 = prompt("Looks like you are quite hungry, Can I get you something to drink in the meantime? If so would you like: water, soda, Beer?");
+   if(story1=="water"||story1=="Water"){
+        path1_1();
+   }   
+   else if(story1=="soda"||story1=="Soda"){
+        path1_2();
+   }
+   else if(story1=="Beer"||story1=="beer"){
+        path1_3();
+   } 
+   else {
+       alert('Incoreect Input, try again');
+       path1();
+   }
 }
 
+//PATH OPTION 1_1
+function path1_1(){
+    var story1_1 = prompt('Water it is! Ice? Tap?');
+}
+//PATH OPTION 1_2
+function path1_2(){
+    var story1_2 = prompt('Soda it is! what kind of Soda??');
+    
+}
+    //PATH OPTION 1_3
+function path1_3(){
+        var story1_3 = prompt("beer it is! HMM are you 21?");
+}
+
+
+// PATH OPTION 2
 function path2(){
     var story2 = prompt("In need of an alcoholic beverage? How old are you?");
 
 }
 
+
+
+//PATH OPTION 3
 function path3(){
     var story2 = prompt("path 2 story");
     
