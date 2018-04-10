@@ -213,7 +213,7 @@ function path1_2(){
 }
     //PATH OPTION 1_3
 function path1_3(){
-        var story1_3 = prompt("beer it is! HMM are you 21?");
+        var story1_3 = prompt("beer it is! HMM How old are you?");
 }
 
 
@@ -222,13 +222,36 @@ function path2(){
     var story2 = prompt("In need of an alcoholic beverage? How old are you?");
 
 }
+function path2_1(){
+    var story2_1 = prompt("");
+    
+}
+function path2_2(){
+    var story2_2 = prompt("");
+
+}
+function path2_3(){
+    var story2_3 = prompt("");
+
+}
 
 
 
 //PATH OPTION 3
 function path3(){
-    var story2 = prompt("path 2 story");
+    var story2 = prompt("Welcome to the Gambling Area. Would you like to play Slots, 21, or Texas Hold 'em?");
     
+
+}
+function path3_1(){
+    var story3_1 = prompt("");
+}
+function path3_2(){
+    var story3_2 = prompt("");
+
+}
+function path3_3(){
+    var story3_3 = prompt("");
 
 }
 
