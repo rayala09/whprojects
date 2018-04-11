@@ -167,14 +167,15 @@ function entryStory(){
     var story = prompt("Hello and welcome to Club One Casino. Would you like to go to the: Restaurant, Bar or Gambling Area?");
 
     if(story == "Restaurant" || story == "restaurant" ){
-        path1(story);
+        
+        restaurant1();
 
     }
     else if(story == "Bar" || story == "bar"){
-        path2(story);
+        Bar2();
     }
     else if(story=="Gambling Area" || story=="gambling area"){
-        path3(story);
+        gamblingArea3();
     }
     else {
         alert('incorrect input, try again')
@@ -184,74 +185,117 @@ function entryStory(){
 
 }
 
+
 //PATH OPTION 1
-function path1(){
+function restaurant1(){
    var story1 = prompt("Looks like you are quite hungry, Can I get you something to drink in the meantime? If so would you like: water, soda, Beer?");
    if(story1=="water"||story1=="Water"){
-        path1_1();
+        restaurant1_1();
    }   
-   else if(story1=="soda"||story1=="Soda"){
-        path1_2();
+   else if(story1 == "soda"||story1 == "Soda"){
+        restaurant1_2();
    }
-   else if(story1=="Beer"||story1=="beer"){
-        path1_3();
+   else if(story1 == "Beer"||story1 == "beer"){
+        restaurant1_3();
    } 
    else {
-       alert('Incoreect Input, try again');
-       path1();
+       alert('Incorrect Input, try again');
+       restuarant1();
    }
 }
 
 //PATH OPTION 1_1
-function path1_1(){
+function restaurant1_1(){
     var story1_1 = prompt('Water it is! Ice? Tap?');
 }
 //PATH OPTION 1_2
-function path1_2(){
+function restaurant1_2(){
     var story1_2 = prompt('Soda it is! what kind of Soda??');
     
 }
-    //PATH OPTION 1_3
-function path1_3(){
+//PATH OPTION 1_3
+function restaurant1_3(){
         var story1_3 = prompt("beer it is! HMM How old are you?");
 }
 
 
-// PATH OPTION 2
-function path2(){
-    var story2 = prompt("In need of an alcoholic beverage? How old are you?");
 
-}
-function path2_1(){
-    var story2_1 = prompt("");
+//PATH OPTION 2
+function Bar2(){
+    var story2 = prompt("In need of an alcoholic beverage? What can i get for you? A mixed drink, Beer, or Shot?: ");
+    if(story2 == "mixed drink" || story2 == "Mixed Drink" ){
+        Bar2_1();
+    }
+    else if(story2 == "Beer" || story2 == "beer"){
+        Bar2_2();    
+    }
+    else if(story2 == "Shot" || story2 == "shot"){
+        Bar2_3();
+    }
+    else{
+        alert("Sorry, Try again");
+        Bar2();
+    }
     
 }
-function path2_2(){
-    var story2_2 = prompt("");
 
+// PATH OPTION 2_1
+function Bar2_1(){
+    var story2_1 = prompt("Mixed Drink it is! what can i get For you");
+    
 }
-function path2_3(){
-    var story2_3 = prompt("");
+
+// PATH OPTION 2_2
+function Bar2_2(){
+    var story2_2 = prompt("Beer it is! what can I get for you?");
+    
+}
+
+// PATH OPTION 2_3
+function Bar2_3(){
+    var story2_3 = prompt("Holy shot! what kind of shot would you like?");
 
 }
 
 
 
 //PATH OPTION 3
-function path3(){
-    var story2 = prompt("Welcome to the Gambling Area. Would you like to play Slots, 21, or Texas Hold 'em?");
+function gamblingArea3(){
+    var story3 = prompt("Welcome to the Gambling Area. Would you like to play: Slots, 21, or Texas Hold 'em?");
+    if(story3 == "Slots" || story3 == "slots"){
+        gamblingArea3_1();
+
+    }
+    else if(story3 == "21" || story3 == "twenty one"){
+        gamblingArea3_2();
+
+    }
+    else if(story3 == "Texas Hold' em" || story3 == "texas hold' em" || story3 == "Texas hold' em"){
+        gamblingArea3_3();
+
+    }
+    else{
+        alert('Sorry, Try again');
+        gamblingArea3();
+    }
     
 
 }
-function path3_1(){
-    var story3_1 = prompt("");
-}
-function path3_2(){
-    var story3_2 = prompt("");
 
+// PATH OPTION 3_1
+function gamblingArea3_1(){
+    var story3_1 = prompt("Welcome to the Slots machine!");
 }
-function path3_3(){
-    var story3_3 = prompt("");
+
+// PATH OPTION 3_2
+function gamblingArea3_2(){
+    var story3_2 = prompt("Lets play some 21, take a seat. ");
+    
+}
+
+// PATH OPTION 3_3
+function gamblingArea3_3(){
+    var story3_3 = prompt("Howdy, shall we play some poker. Find a seat");
 
 }
 
