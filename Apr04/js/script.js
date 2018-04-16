@@ -165,7 +165,8 @@ getAge();
 //INITIAL STORY
 function entryStory(){
     var story = prompt("Hello and welcome to Club 500 Casino. Would you like to go to the: Restaurant, Bar or Gambling Area?");
-
+    
+    
     if(story == "Restaurant" || story == "restaurant" ){
         
         restaurant1();
@@ -188,7 +189,7 @@ function entryStory(){
 
 //PATH OPTION 1
 function restaurant1(){
-   var story1 = prompt("Looks like you are quite hungry, Can I get you something to drink in the meantime? If so would you like: water, soda, Beer?");
+   var story1 = prompt("Looks like you are quite hungry, Can I get you something to drink in the meantime? If so would you like: Water, Soda, Beer?");
    if(story1=="water"||story1=="Water"){
         restaurant1_1();
    }   
@@ -373,19 +374,47 @@ function gamblingArea3(){
 
 // PATH OPTION 3_1
 function gamblingArea3_1(){
-    var story3_1 = prompt("Welcome to the Slots machine! ");
+    var story3_1 = prompt("Welcome to the Slots machine! Would you like to pull the crane?");
 }
 
 // PATH OPTION 3_2
 function gamblingArea3_2(){
-    var story3_2 = prompt("Lets play some 21, take a seat. ");
+    var story3_2 = prompt("Lets play some 21, take a seat. Your initial hand is a 6 of clubs and a 4 of Spades. Would you like to Hit, Double Down, or Surrender? ");
+    if(story3_2=="Hit" || story3_2=="hit"){
+        alert("You hit and got an Ace, Congratulations 21! you won $2");
+
+    }
+    else if(story3_2=="Double Down" || story3_2=="double down"){
+        alert("You doubled down and got an Ace! congratulation you just won $4");
+    }
+    else if(story3_2=="Surrender" || story3_2=="surrender"){
+        alert("You surrendered and lost $1. Better luck next hand!");
+    }
+    else{
+        alert("Sorry, You must select an option from above");
+        gamblingArea3_2();
+    }
     
 }
 
 // PATH OPTION 3_3
 function gamblingArea3_3(){
-    var story3_3 = prompt("Howdy, shall we play some poker. Find a seat");
+    var story3_3 = prompt("Howdy, shall we play some poker. Minimum Bet is $20. Your initial hand consists of Pocket Q's of Clover and Clubs. The flop was a 3 of Clovers, 3 of Clubs, and Q of Spades. The turn was a 3 of spades. The river is next and you call the shots, $100 are on the table. Are you going to Check, Bet $20, or Fold?");
+    if(story3_3=="Check" || story3_3=="check"){
+        alert("You checked and so did everyone else. The river was a Q of hearts. You won $100 with a 3 of a kind with Queens. Congratulations!");
 
+    }
+    else if(story3_3=="Bet $20" || story3_3=="bet $20"){
+        alert("You bet an additional $20 and everyone called. $200 on the table and the river is.....a 3 of hearts. So close you lost $40! Player 1 won this hand with a four of a kind of 3's. Better Luck next time! ");
+    }
+    else if(story3_3=="Fold" || story3_3=="fold"){
+        alert("You folded and lost only $20. Better luck next time");
+    }
+    else{
+        alert("Sorry, Choose an option from above please");
+        gamblingArea3_3();
+    }
+    
 }
 
 entryStory();
