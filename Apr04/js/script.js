@@ -417,4 +417,7 @@ function gamblingArea3_3(){
     
 }
 
-entryStory();
+var btn1 = document.getElementsByTagName('button');
+
+
+// entryStory();

@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  background: url("/img/Front.png") repeat #007780;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: darkblue;
+}
+/*# sourceMappingURL=style.css.map */
