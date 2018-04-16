@@ -207,7 +207,7 @@ function restaurant1(){
 
 //PATH OPTION 1_1
 function restaurant1_1(){
-    var story1_1 = prompt('Water it is! Ice? Tap, Mineral, or Distilled?');
+    var story1_1 = prompt('Water it is! Tap, Mineral, or Distilled?');
     if(story1_1=="Tap" || story1_1=="tap"){
         alert("Here is your Tap Water! Enjoy");
     }
