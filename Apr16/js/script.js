@@ -55,12 +55,12 @@ var myDelay = setTimeout(hiliteBg, 5000);
 function hiliteBg(){
     document.body.classList.add('hilite');
 }
-    function runTimer(){
-        var theTime = new Date();
-        var timeStr = `
-        ${theTime.toLocaleString('en-us',{hour: 'numeric', hour12:false, minute: '2-digit', second: '2-digit'})}
+function runTimer(){
+    var theTime = new Date();
+    var timeStr = `
+    ${theTime.toLocaleString('en-us',{hour: 'numeric', hour12:false, minute: '2-digit', second: '2-digit'})}
             
-        `;
-         document.querySelector('h3').textContent = timeStr;
+    `;
+     document.querySelector('h3').textContent = timeStr;
         
     }
