@@ -164,7 +164,7 @@ getAge();
 
 //INITIAL STORY
 function entryStory(){
-    var story = prompt("Hello and welcome to Club One Casino. Would you like to go to the: Restaurant, Bar or Gambling Area?");
+    var story = prompt("Hello and welcome to Club 500 Casino. Would you like to go to the: Restaurant, Bar or Gambling Area?");
 
     if(story == "Restaurant" || story == "restaurant" ){
         
@@ -206,16 +206,57 @@ function restaurant1(){
 
 //PATH OPTION 1_1
 function restaurant1_1(){
-    var story1_1 = prompt('Water it is! Ice? Tap?');
+    var story1_1 = prompt('Water it is! Ice? Tap, Mineral, or Distilled?');
+    if(story1_1=="Tap" || story1_1=="tap"){
+        alert("Here is your Tap Water! Enjoy");
+    }
+    else if(story1_1=="Mineral" || story1_1=="mineral"){
+        alert('Here is your Mineral Water! Enjoy');
+    }
+    else if(story1_1=="Distilled" || story1_1=="distilled"){
+        alert('Here is your Distilled Water! Enjoy');
+    }
+    else{
+        alert("Sorry, Please choose one from Above");
+        restaurant1_1();
+    }
+
 }
 //PATH OPTION 1_2
 function restaurant1_2(){
-    var story1_2 = prompt('Soda it is! what kind of Soda??');
-    
+    var story1_2 = prompt('Soda it is! what kind of Soda?? Pepsi, Cola, Sprite');
+    if(story1_2=="Pepsi" || story1_2=="pepsi"){
+        alert("Here is your Pepsi! Enjoy")
+    }
+    else if(story1_2=="Cola" || story1_2=="cola"){
+        alert("Here is your Coca Cola! Enjoy");
+    }
+    else if(story1_2=="Sprite" || story1_2=="sprite"){
+        alert('Here is your Sprite! Enjoy');
+    }
+    else{
+        alert('Sorry, Choose one from above');
+        restaurant1_2();
+    }
 }
 //PATH OPTION 1_3
 function restaurant1_3(){
-        var story1_3 = prompt("beer it is! HMM How old are you?");
+    var story1_3 = prompt("beer it is! Corona, Blue Moon, or Pacifico?");
+    if(story1_3=="Corona" || story1_3=="corona"){
+        alert("Here is your Refreshing Corona! Enjoy and drink responsibly");
+    }
+    else if(story1_3=="Blue Moon" || story1_3=="blue moon"){
+        alert("Here is your Refreshing Blue Moon! Enjoy and drink responsibly");
+        
+    }
+    else if(story1_3=="Pacifico" || story1_3=="pacifico"){
+        alert("Here is your Refreshing Pacifico! Enjoy and drink responsibly");
+
+    }
+    else{
+        alert("Sorry, Choose one from above");
+        restaurant1_3();
+    }
 }
 
 
@@ -241,19 +282,67 @@ function Bar2(){
 
 // PATH OPTION 2_1
 function Bar2_1(){
-    var story2_1 = prompt("Mixed Drink it is! what can i get For you");
+    var story2_1 = prompt("Mixed Drink it is! what can i get For you? AMF, Redbull Vodka, or Margarita? ");
+    if(story2_1=="AMF" || story2_1=="amf"){
+        alert('Here is your AMF! Enjoy and drink responsibly');
+        
+    }
+    else if(story2_1=="Redbull Vodka" || story2_1=="redbull vodka"){
+        alert('Here is your Redbull Vodka! Enjoy and drink responsibly');
+        
+    }
+    else if(story2_1=="Margarita" || story2_1=="margarita"){
+        alert('Here is your Margarita! Enjoy and drink responsibly');
+
+    }
+    else{
+        alert("Sorry, Choose one from above");
+        Bar2_1();
+    }
     
 }
 
 // PATH OPTION 2_2
 function Bar2_2(){
-    var story2_2 = prompt("Beer it is! what can I get for you?");
+    var story2_2 = prompt("Beer it is! what can I get for you? Corona, Blue Moon, or Pacifico?");
+    if(story2_2=="Corona" || story2_2=="corona"){
+        alert('Here is your Corona! Enjoy and drink responsibly');
+        
+    }
+    else if(story2_2=="Blue Moon" || story2_2=="blue moon"){
+        alert('Here is your Blue Moon! Enjoy and drink responsibly');
+        
+    }
+    else if(story2_2=="Pacifico" || story2_2=="pacifico"){
+        alert('Here is your Pacifico! Enjoy and drink responsibly');
+    
+    }
+    else{
+        alert("Sorry, Choose one from above");
+        Bar2_2();
+    }
     
 }
 
 // PATH OPTION 2_3
 function Bar2_3(){
-    var story2_3 = prompt("Holy shot! what kind of shot would you like?");
+    var story2_3 = prompt("Holy shot! what kind of shot would you like? Vodka, Jack Daniels, or Ciroc? ");
+        if(story2_3=="Vodka" || story2_3=="vodka"){
+            alert('Here is your Vodka Shot! Enjoy and drink responsibly');
+            
+        }
+        else if(story2_3=="Jack Daniels" || story2_3=="jack daniels"){
+            alert('Here is your Jack Daniels Shot! Enjoy and drink responsibly');
+            
+        }
+        else if(story2_3=="Ciroc" || story2_3=="ciroc"){
+            alert('Here is your Ciroc Shot! Enjoy and drink responsibly');
+        
+        }
+        else{
+            alert("Sorry, Choose one from above");
+            Bar2_3();
+        }
 
 }
 
@@ -284,7 +373,7 @@ function gamblingArea3(){
 
 // PATH OPTION 3_1
 function gamblingArea3_1(){
-    var story3_1 = prompt("Welcome to the Slots machine!");
+    var story3_1 = prompt("Welcome to the Slots machine! ");
 }
 
 // PATH OPTION 3_2
