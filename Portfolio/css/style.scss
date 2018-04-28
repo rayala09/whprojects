@@ -344,7 +344,7 @@ header {
     
 }  
 #contact {
-    background-color: hsl(44, 74%, 38%);
+    background-color: hsla(22, 82%, 43%, 0.781);
 
     div.contact {
         margin-top: 150px; 
@@ -360,25 +360,30 @@ header {
     footer ul {
         li {
             padding: 10px;
+
+        }
+        li.fb{
+            background-color: white;
         }
         display: flex;
         justify-content: center;
         align-items: flex-end;
         i {
-            font-size: 50px;
+            font-size: 35px;
             padding: 20px;
         }
     }
     a.twitter{
         color: #15aabf;
         i {
-            background-color: white;
-            background-clip: content-box;
+            // background-color: white;
+            // background-clip: content-box;
             
         }
     }
     a.facebook {
         color: rgb(31, 82, 192);
+
     }
     a.instagram {
         color: white;

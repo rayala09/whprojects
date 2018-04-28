@@ -222,7 +222,7 @@ header p {
 }
 
 #contact {
-  background-color: #a98219;
+  background-color: rgba(200, 86, 20, 0.781);
 }
 
 #contact div.contact {
@@ -248,18 +248,17 @@ header p {
   padding: 10px;
 }
 
+#contact footer ul li.fb {
+  background-color: white;
+}
+
 #contact footer ul i {
-  font-size: 50px;
+  font-size: 35px;
   padding: 20px;
 }
 
 #contact a.twitter {
   color: #15aabf;
-}
-
-#contact a.twitter i {
-  background-color: white;
-  background-clip: content-box;
 }
 
 #contact a.facebook {
