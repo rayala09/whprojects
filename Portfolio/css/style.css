@@ -128,6 +128,7 @@ header p {
 }
 
 #about div.bio p {
+  text-indent: 20px;
   padding: 20px;
   padding-right: 60px;
   text-align: left;
@@ -222,7 +223,7 @@ header p {
 }
 
 #contact {
-  background-color: rgba(200, 86, 20, 0.781);
+  background-color: rgba(19, 150, 47, 0.781);
 }
 
 #contact div.contact {
@@ -248,25 +249,66 @@ header p {
   padding: 10px;
 }
 
-#contact footer ul li.fb {
-  background-color: white;
-}
-
 #contact footer ul i {
   font-size: 35px;
   padding: 20px;
 }
 
 #contact a.twitter {
-  color: #15aabf;
+  color: white;
+}
+
+#contact a.twitter i {
+  background-color: inherit;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px white;
+}
+
+#contact a.twitter i:hover {
+  background-color: white;
+}
+
+#contact a.twitter:hover {
+  color: rgba(19, 150, 47, 0.781);
 }
 
 #contact a.facebook {
-  color: #1f52c0;
+  color: white;
+}
+
+#contact a.facebook i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px white;
+  background-color: inherit;
+}
+
+#contact a.facebook i:hover {
+  background-color: white;
+}
+
+#contact a.facebook:hover {
+  color: rgba(19, 150, 47, 0.781);
 }
 
 #contact a.instagram {
   color: white;
+}
+
+#contact a.instagram i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px white;
+  background-color: inherit;
+}
+
+#contact a.instagram i:hover {
+  background-color: white;
+}
+
+#contact a.instagram:hover {
+  color: rgba(19, 150, 47, 0.781);
 }
 
 @keyframes fly {

@@ -248,6 +248,7 @@ header {
             justify-content: center;
         }
         p {
+           text-indent: 20px;
            padding: 20px;
            padding-right: 60px;
            text-align: left;
@@ -344,7 +345,7 @@ header {
     
 }  
 #contact {
-    background-color: hsla(22, 82%, 43%, 0.781);
+    background-color: hsla(133, 78%, 33%, 0.781);
 
     div.contact {
         margin-top: 150px; 
@@ -362,9 +363,7 @@ header {
             padding: 10px;
 
         }
-        li.fb{
-            background-color: white;
-        }
+        
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -374,19 +373,59 @@ header {
         }
     }
     a.twitter{
-        color: #15aabf;
+        // color: #15aabf;
+        color: white;
         i {
+            background-color: inherit;
+            display: inline-block;
+            border-radius: 60px;
+            box-shadow: 0px 0px 2px white;
             // background-color: white;
             // background-clip: content-box;
             
         }
+        i:hover{
+            // background-color: hsla(133, 78%, 33%, 0.6);
+            background-color: white;;
+        }
+    }
+    a.twitter:hover{
+        color:  hsla(133, 78%, 33%, 0.781);
     }
     a.facebook {
-        color: rgb(31, 82, 192);
+        color: white;
+        // color: rgb(31, 82, 192);
+        i{
+            display: inline-block;
+            border-radius: 60px;
+            box-shadow: 0px 0px 2px white;
+            background-color: inherit;
+        }
+        i:hover{
+            // background-color:  hsla(133, 78%, 33%, 0.6);
+            background-color: white;
+        }
 
+
+    }
+    a.facebook:hover{
+        color:  hsla(133, 78%, 33%, 0.781);
     }
     a.instagram {
         color: white;
+        i{
+            display: inline-block;
+            border-radius: 60px;
+            box-shadow: 0px 0px 2px white;
+            background-color: inherit;
+        }
+        i:hover{
+            background-color: white;
+            // background-color:  hsla(133, 78%, 33%, 0.6);
+        }
+    }
+    a.instagram:hover{
+        color:  hsla(133, 78%, 33%, 0.781);
     }
 }
 
