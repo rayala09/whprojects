@@ -131,7 +131,7 @@
 // FONTS AND ICONS 
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fontsde.googleapis.com/css?family=Russo+One');
 
 // GLOBAL STYLES
 body {
@@ -234,13 +234,14 @@ header {
         padding: 3px;
         width: 250px;
         margin-right: 20px;
+    }
 
+    img.portrait{
+        transform: rotate(90deg);
+        width: 250px;
+        height: 250px;
     }
-    div.profile {
-        box-shadow: 2px 2px red;
-        // transform: rotate(90deg);
-        // margin-top: 350px;
-    }
+
     div.bio {
         margin-top: 100px;
         h2 {
@@ -266,7 +267,7 @@ header {
     }
 }
 #gallery {
-    background-color: white;
+    background-color: rgba(1, 17, 247, 0.829);
     h2 {
         display: flex;
         justify-content: center;
@@ -296,11 +297,12 @@ header {
         border-radius: 5px;
         padding: 5px;
         height: 250px;
-        width: 250px;    
+        width: 250px;  
            
     }
     img:hover {
-        box-shadow: 0 0 3px 2px red;
+        // box-shadow: 0 0 3px 2px red;
+        z-index: 99;
         
     }
     i {
@@ -336,7 +338,7 @@ header {
     }
     figure:hover {
         border-radius: 5px;
-        box-shadow: 0 0 3px 2px red;
+        // box-shadow: 0 0 3px 2px red;
     }
     figure:hover figcaption {
         opacity: 1;
@@ -360,7 +362,7 @@ header {
     }
     footer ul {
         li {
-            padding: 10px;
+            padding: 30px;
 
         }
         
@@ -387,10 +389,12 @@ header {
         i:hover{
             // background-color: hsla(133, 78%, 33%, 0.6);
             background-color: white;;
+            transition: all 250ms ease;
         }
     }
     a.twitter:hover{
         color:  hsla(133, 78%, 33%, 0.781);
+        transition: all 50ms ease;
     }
     a.facebook {
         color: white;
@@ -398,18 +402,22 @@ header {
         i{
             display: inline-block;
             border-radius: 60px;
+            text-align: center;
+            width: 35px;
             box-shadow: 0px 0px 2px white;
             background-color: inherit;
         }
         i:hover{
             // background-color:  hsla(133, 78%, 33%, 0.6);
             background-color: white;
+            transition: all 250ms ease;
         }
 
 
     }
     a.facebook:hover{
         color:  hsla(133, 78%, 33%, 0.781);
+        transition: all 50ms ease;
     }
     a.instagram {
         color: white;
@@ -421,17 +429,23 @@ header {
         }
         i:hover{
             background-color: white;
+            transition: all 250ms ease;
+            
             // background-color:  hsla(133, 78%, 33%, 0.6);
         }
     }
     a.instagram:hover{
         color:  hsla(133, 78%, 33%, 0.781);
+        transition: all 50ms ease;
     }
 }
 
 
 //animations
 //plane icon
+
+/*
+
 @keyframes fly {
     0% {
         transform: scale(1);
@@ -457,3 +471,5 @@ header {
     // animation-fill-mode: forwards;
     // animation-timing-function: ease-in;
 }
+
+*/
