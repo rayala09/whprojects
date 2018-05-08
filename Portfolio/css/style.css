@@ -184,10 +184,6 @@ header p {
   width: 250px;
 }
 
-#gallery img:hover {
-  z-index: 99;
-}
-
 #gallery i {
   margin-top: 6px;
   padding-left: 10px;
@@ -217,6 +213,7 @@ header p {
 
 #gallery figure:hover {
   border-radius: 5px;
+  width: 250px;
 }
 
 #gallery figure:hover figcaption {

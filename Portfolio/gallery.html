@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <title>Gallery</title>
 </head>
 <body>
@@ -32,13 +33,13 @@
       <ul>
          <li> 
              <figure>
-               <a target="_blank" href="/Img/Newyork.JPG"><img src="/Img/Newyork.JPG" alt=""></a>
+               <a target="_blank" data-lightbox="mygallery" href="/Img/Newyork.JPG"><img src="/Img/Newyork.JPG" alt=""></a>
                <figcaption>New York</figcaption>
               </figure>
          </li>
          <li> 
             <figure>
-              <a target="_blank" href="/Img/LincolnF.JPG"><img src="Img/LincolnF.JPG" alt=""></a>
+              <a target="_blank" data-lightbox="mygallery" href="/Img/LincolnF.JPG"><img src="Img/LincolnF.JPG" alt=""></a>
               <figcaption>Lincoln Financial Field</figcaption>
              </figure>
         </li>
@@ -112,7 +113,9 @@
 
       </ul>
   </div>                
-       
+ 
+  
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

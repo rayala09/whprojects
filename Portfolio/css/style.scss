@@ -298,11 +298,12 @@ header {
         padding: 5px;
         height: 250px;
         width: 250px;  
+        
            
     }
     img:hover {
         // box-shadow: 0 0 3px 2px red;
-        z-index: 99;
+        // transform: scale(1.1);
         
     }
     i {
@@ -338,6 +339,8 @@ header {
     }
     figure:hover {
         border-radius: 5px;
+        width: 250px;
+
         // box-shadow: 0 0 3px 2px red;
     }
     figure:hover figcaption {
