@@ -1,5 +1,5 @@
 <h1>The value is {{ value }}</h1>
 <p *ngIf="value<10">Angular sez: Low number</p>
-<p *ngFor="let color of colors">
+<p *ngFor="let color of colors" [ng]>
   {{color}}
 </p>
