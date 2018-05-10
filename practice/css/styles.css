@@ -1,0 +1,86 @@
+html {
+  background-image: url("https://unsplash.it/400/?");
+  background-size: cover;
+}
+
+body {
+  padding: 50px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("https://unsplash.it/500/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: yellow;
+  margin: 0;
+  padding: 100px;
+}
+
+header {
+  background-color: black;
+  margin: 0;
+  padding: 6px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: red;
+  transition: all 20ms;
+}
+
+header li {
+  padding: 12px;
+  border-radius: 5px;
+}
+
+header li:hover {
+  background-color: #333333;
+  transition: all 250ms;
+}
+
+#content {
+  background-color: white;
+  margin-top: 0;
+  padding: 50px;
+}
+
+#content ul {
+  margin: 0;
+}
+
+#content ul li {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: solid 2px red;
+  margin-bottom: 5px;
+}
+
+#content h1 {
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
