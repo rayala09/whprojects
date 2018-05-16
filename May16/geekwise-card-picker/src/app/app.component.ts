@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
   private _deck: Deck = new Deck;
   public drawnCard: ICard;
-  public userHand:ICard[] = [];
+  public userHand: ICard[] = [];
   public _cardsRemaining: number;
   public lifeBarColor: string;
   constructor() {
