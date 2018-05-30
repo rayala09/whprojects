@@ -81,7 +81,7 @@ class Employee {
 }
 
 class Person {
-  protected name: string;
+  // protected name: string;
 
   protected constructor(name: string) {
     this.name = name;
@@ -101,6 +101,20 @@ class Worker extends Person {
   }
 }
 
+// Modules
+module Shapes {
+  export class Rectangle {
+  //   height: number;
+  //   width: number;
+  //   constructor (height: number, width: number) {
+  //     this.height = height;
+  //     this.width = width;
+  //   }
+  constructor(public height: number, public width: number) {}
+  }
+  export const rect1 = new Rectangle (10, 4);
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -114,7 +128,10 @@ export class AppComponent implements OnInit {
     // this.animalClassTesting();
     // this.classCompatibilityTesting();
     // this.extendDerivedClassTesting();
-    this.protectedTesting();
+    // this.protectedTesting();
+    const rect2 = new Shapes.Rectangle(20, 10);
+    console.log(rect2);
+    console.log(Shapes.rect1);
   }
 
   classTesting() {
